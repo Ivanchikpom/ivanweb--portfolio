@@ -1,0 +1,4 @@
+/contacts   /contacts.html   200
+/about      /about.html      200
+/projects   /projects.html   200
+/skills     /skills.html     200
