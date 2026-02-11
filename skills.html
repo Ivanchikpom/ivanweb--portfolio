@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Навички | IvanWeb</title>
+  <meta name="description" content="Навички IvanWeb: HTML, CSS, JavaScript, адаптив, оптимізація." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWJFKGW44N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QWJFKGW44N');
+</script>
+
+
+<body data-page="skills">
+  <div id="preloader" aria-hidden="true"><div class="loader" aria-hidden="true"></div></div>
+
+  <header class="header">
+    <nav class="nav container" aria-label="Головна навігація">
+      <a class="logo" href="index.html" aria-label="IvanWeb — на головну">
+        <span class="logo-dot" aria-hidden="true"></span>IvanWeb
+      </a>
+
+      <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="menu">☰</button>
+
+      <div class="menu" id="menu">
+        <a href="index.html" class="menu-link">Головна</a>
+        <a href="about.html" class="menu-link">Про мене</a>
+        <a href="projects.html" class="menu-link">Проєкти</a>
+        <a href="skills.html" class="menu-link">Навички</a>
+        <a href="contacts.html" class="menu-link">Контакти</a>
+        <div class="menu-actions">
+          <button id="themeToggle" class="theme-btn" type="button" title="Змінити тему">🌙</button>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <button id="themeToggleDesktop" class="theme-btn" type="button" title="Змінити тему">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container section reveal">
+      <div class="page-head">
+        <h1>Навички</h1>
+        <p class="lead">Мій стек для простих, швидких і акуратних сайтів.</p>
+      </div>
+
+      <div class="skill-grid">
+        <div class="skill">
+          <div class="skill-top">
+            <h3>HTML</h3>
+            <span class="badge">Семантика</span>
+          </div>
+          <div class="progress"><div class="progress-bar" data-width="92%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <h3>CSS</h3>
+            <span class="badge">Modern UI</span>
+          </div>
+          <div class="progress"><div class="progress-bar" data-width="90%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <h3>JavaScript</h3>
+            <span class="badge">UI/UX</span>
+          </div>
+          <div class="progress"><div class="progress-bar" data-width="75%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <h3>Адаптив</h3>
+            <span class="badge">Mobile-first</span>
+          </div>
+          <div class="progress"><div class="progress-bar" data-width="95%"></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container reveal">
+    <div class="footer-top">
+      <div>
+        <h3>Звʼязатися зі мною</h3>
+        <p class="muted">Telegram або Email.</p>
+      </div>
+      <div class="footer-contacts">
+        <a href="https://t.me/vanichka_love" target="_blank" rel="noopener" class="footer-btn">Telegram</a>
+        <a href="mailto:ivantrebko8@gmail.com" class="footer-btn">Email</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 IvanWeb — створення сайтів під ключ</p>
+  </footer>
+
+  <button id="toTop" class="to-top" type="button" aria-label="Вгору">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

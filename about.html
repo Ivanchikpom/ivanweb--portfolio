@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Про мене | IvanWeb</title>
+  <meta name="description" content="Веб-розробник IvanWeb. Створюю сучасні адаптивні сайти під ключ з фокусом на результат." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://ivanweb-portfolio.netlify.app/about.html" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Про мене | IvanWeb" />
+  <meta property="og:description" content="Веб-розробник. Сучасні адаптивні сайти під ключ." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ivanweb-portfolio.netlify.app/about.html" />
+  <meta property="og:image" content="https://ivanweb-portfolio.netlify.app/img/og-cover.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWJFKGW44N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QWJFKGW44N');
+</script>
+
+
+<body data-page="about">
+  <div id="preloader" aria-hidden="true"><div class="loader" aria-hidden="true"></div></div>
+
+  <header class="header">
+    <nav class="nav container" aria-label="Головна навігація">
+      <a class="logo" href="index.html" aria-label="IvanWeb — на головну">
+        <span class="logo-dot" aria-hidden="true"></span>IvanWeb
+      </a>
+
+      <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="menu">☰</button>
+
+      <div class="menu" id="menu">
+        <a href="index.html" class="menu-link">Головна</a>
+        <a href="about.html" class="menu-link">Про мене</a>
+        <a href="projects.html" class="menu-link">Проєкти</a>
+        <a href="skills.html" class="menu-link">Навички</a>
+        <a href="contacts.html" class="menu-link">Контакти</a>
+        <div class="menu-actions">
+          <button id="themeToggle" class="theme-btn" type="button" title="Змінити тему">🌙</button>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <button id="themeToggleDesktop" class="theme-btn" type="button" title="Змінити тему">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container section reveal">
+      <div class="page-head">
+        <h1>Про мене</h1>
+        <p class="lead">
+          Привіт, я Іван 👋 Роблю прості, зрозумілі й сучасні сайти, які добре виглядають на телефоні та швидко завантажуються.
+        </p>
+      </div>
+
+      <div class="split">
+        <div class="panel">
+          <h2>Мій підхід</h2>
+          <p class="muted">
+            Мета — не просто “зробити сайт”, а допомогти отримати сторінку, яка зрозуміло презентує послуги
+            й підштовхує клієнта написати/замовити.
+          </p>
+
+          <div class="chips">
+            <span class="chip">Mobile-first</span>
+            <span class="chip">Швидкість</span>
+            <span class="chip">Чистий дизайн</span>
+            <span class="chip">SEO-база</span>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Як я працюю</h2>
+          <ul class="checklist">
+            <li>Уточнюю ціль і структуру</li>
+            <li>Роблю перший варіант</li>
+            <li>Вношу правки</li>
+            <li>Публікую сайт і тестую</li>
+          </ul>
+
+          <h2 style="margin-top:14px;">Чому мені можна довіряти</h2>
+          <ul class="checklist">
+            <li>Чіткі терміни та чесна ціна</li>
+            <li>Адаптив під телефон і ПК</li>
+            <li>Підтримка після запуску</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cta small" style="margin-top:14px;">
+        <div>
+          <h2>Готовий обговорити твій сайт</h2>
+          <p class="muted">Напиши — підкажу, який варіант краще підійде.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn primary" href="contacts.html#order">Замовити сайт</a>
+          <a class="btn" href="projects.html">Подивитись проєкти</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container reveal">
+    <div class="footer-top">
+      <div>
+        <h3>Звʼязатися зі мною</h3>
+        <p class="muted">Telegram або Email.</p>
+      </div>
+      <div class="footer-contacts">
+        <a href="https://t.me/vanichka_love" target="_blank" rel="noopener" class="footer-btn">Telegram</a>
+        <a href="mailto:ivantrebko8@gmail.com" class="footer-btn">Email</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 IvanWeb — створення сайтів під ключ</p>
+  </footer>
+
+  <button id="toTop" class="to-top" type="button" aria-label="Вгору">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

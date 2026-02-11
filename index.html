@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="t7QEPbuZcnBDos6CZaDQtrtcaKfiTJ019otMf6uIJ3c" />
+
+  <!-- SEO -->
+  <title>Створення сайтів під ключ | IvanWeb</title>
+  <meta name="description" content="Сучасні сайти під ключ: сайт-візитка, портфоліо, бізнес-сайт. Адаптивно, швидко, недорого. Напиши — домовимось." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://ivanweb-portfolio.netlify.app/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="IvanWeb — створення сайтів під ключ" />
+  <meta property="og:description" content="Сайти-візитки, портфоліо та бізнес-сайти. Швидко, адаптивно, SEO-підготовка." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ivanweb-portfolio.netlify.app/" />
+  <meta property="og:image" content="https://ivanweb-portfolio.netlify.app/img/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Analytics 4 (GA4) -->
+  <!-- Заміни G-XXXXXXXXXX на свій Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWJFKGW44N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QWJFKGW44N', { anonymize_ip: true });
+  </script>
+
+  <!-- Plausible (optional) -->
+  <!-- Якщо хочеш Plausible: розкоментуй і заміни data-domain -->
+  <!--
+  <script defer data-domain="ivanweb-portfolio.netlify.app" src="https://plausible.io/js/script.js"></script>
+  -->
+
+  <!-- JSON-LD (Person + Service + WebSite) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ivanweb-portfolio.netlify.app/#website",
+        "url": "https://ivanweb-portfolio.netlify.app/",
+        "name": "IvanWeb",
+        "inLanguage": "uk-UA",
+        "publisher": { "@id": "https://ivanweb-portfolio.netlify.app/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://ivanweb-portfolio.netlify.app/#person",
+        "name": "Іван",
+        "jobTitle": "Веб-розробник",
+        "url": "https://ivanweb-portfolio.netlify.app/",
+        "email": "mailto:ivantrebko8@gmail.com",
+        "sameAs": [
+          "https://t.me/vanichka_love"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://ivanweb-portfolio.netlify.app/#service",
+        "name": "IvanWeb — створення сайтів під ключ",
+        "url": "https://ivanweb-portfolio.netlify.app/",
+        "areaServed": "UA",
+        "email": "mailto:ivantrebko8@gmail.com",
+        "sameAs": ["https://t.me/vanichka_love"],
+        "serviceType": [
+          "Сайт-візитка",
+          "Портфоліо",
+          "Редизайн сайту"
+        ],
+        "offers": [
+          { "@type": "Offer", "name": "Сайт-візитка", "priceCurrency": "USD", "price": "40" },
+          { "@type": "Offer", "name": "Портфоліо", "priceCurrency": "USD", "price": "50" },
+          { "@type": "Offer", "name": "Редизайн", "priceCurrency": "USD", "price": "30" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body data-page="home">
+  <!-- PRELOADER -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader" aria-hidden="true"></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav container" aria-label="Головна навігація">
+      <a class="logo" href="index.html" aria-label="IvanWeb — на головну">
+        <span class="logo-dot" aria-hidden="true"></span>
+        IvanWeb
+      </a>
+
+      <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="menu">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <div class="menu" id="menu">
+        <a href="index.html" class="menu-link">Головна</a>
+        <a href="about.html" class="menu-link">Про мене</a>
+        <a href="projects.html" class="menu-link">Проєкти</a>
+        <a href="skills.html" class="menu-link">Навички</a>
+        <a href="contacts.html" class="menu-link">Контакти</a>
+
+        <div class="menu-actions">
+          <button id="themeToggle" class="theme-btn" type="button" title="Змінити тему" aria-label="Змінити тему">
+            🌙
+          </button>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <button id="themeToggleDesktop" class="theme-btn" type="button" title="Змінити тему" aria-label="Змінити тему">
+          🌙
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container section">
+      <div class="hero-grid reveal">
+        <div class="hero-card">
+          <p class="kicker">Створення сайтів під ключ</p>
+          <h1 class="title">
+            Привіт, я Іван 👋<br />
+            Роблю сучасні сайти, які приносять заявки
+          </h1>
+
+          <p class="lead">
+            Сайти-візитки, портфоліо та прості бізнес-сайти. Швидке завантаження, адаптив під телефон,
+            базова SEO-підготовка та чистий код.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="contacts.html#order">Замовити сайт</a>
+            <a class="btn" href="projects.html">Мої проєкти</a>
+            <a class="btn ghost" href="contacts.html">Контакти</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-num">1–6</div>
+              <div class="stat-label">днів на запуск</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Mobile-first</div>
+              <div class="stat-label">адаптив одразу</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">SEO</div>
+              <div class="stat-label">мета + структура</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="price-card">
+          <h2 class="card-title">Пакети та ціни</h2>
+
+          <div class="price-list">
+            <div class="price-item">
+              <div>
+                <div class="price-name">Сайт-візитка</div>
+                <div class="price-desc">1 сторінка, CTA, контакти</div>
+              </div>
+              <div class="price-tag">від 40$</div>
+            </div>
+
+            <div class="price-item">
+              <div>
+                <div class="price-name">Портфоліо</div>
+                <div class="price-desc">про мене, роботи, контакти</div>
+              </div>
+              <div class="price-tag">від 50$</div>
+            </div>
+
+            <div class="price-item">
+              <div>
+                <div class="price-name">Редизайн</div>
+                <div class="price-desc">оновлення стилю + UX</div>
+              </div>
+              <div class="price-tag">від 30$</div>
+            </div>
+
+            <div class="price-item">
+              <div>
+                <div class="price-name">Бізнес-сайт</div>
+                <div class="price-desc">Багатосторінковий сайт для компанії</div>
+              </div>
+              <div class="price-tag">від 80$</div>
+            </div>
+
+          </div>
+
+          <div class="mini-note">
+            <span class="dot" aria-hidden="true"></span>
+            Напиши — підкажу оптимальний варіант під твою задачу.
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="container section reveal">
+      <div class="section-head">
+        <h2 class="section-title">Що я роблю</h2>
+        <p class="section-subtitle">Пояснюю просто, роблю швидко, дизайн — сучасний.</p>
+      </div>
+
+      <div class="cards">
+        <article class="cardx">
+          <div class="cardx-icon" aria-hidden="true">⚡</div>
+          <h3>Сайт-візитка</h3>
+          <p>Односторінковий сайт для послуг/бізнесу: структура, CTA-кнопки, контакти, адаптив.</p>
+          <ul class="bullets">
+            <li>швидкий запуск</li>
+            <li>кнопка “написати”</li>
+            <li>чітка подача послуг</li>
+          </ul>
+        </article>
+
+        <article class="cardx">
+          <div class="cardx-icon" aria-hidden="true">🧩</div>
+          <h3>Портфоліо</h3>
+          <p>Сайт для майстрів/фрилансерів: про мене, кейси, відгуки, контакти.</p>
+          <ul class="bullets">
+            <li>галерея робіт</li>
+            <li>зручний перегляд на мобільному</li>
+            <li>готово до реклами/SEO</li>
+          </ul>
+        </article>
+
+
+
+        <article class="cardx">
+          <div class="cardx-icon" aria-hidden="true">💻</div>
+          <h3>Бізнес сайт</h3>
+          <p> Сайт для компанії з описом послуг, інформацією про компанію, контактами та формою заявок. Адаптивний під телефон</p>
+          <ul class="bullets">
+            <li>індивідуальна структура</li>
+            <li>під конкретний бізнес</li>
+            <li>орієнтація на заявки/li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="container section reveal">
+      <div class="section-head">
+        <h2 class="section-title">Як відбувається робота</h2>
+        <p class="section-subtitle">Без хаосу: етапи та терміни зрозумілі одразу.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <div class="step-num">1</div>
+          <div>
+            <h3>Обговорюємо задачу</h3>
+            <p>Ціль сайту, структура, приклади стилю, що потрібно з контенту.</p>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step-num">2</div>
+          <div>
+            <h3>Роблю дизайн + верстку</h3>
+            <p>Адаптивний layout, кнопки, анімації, швидке завантаження.</p>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step-num">3</div>
+          <div>
+            <h3>Правки і запуск</h3>
+            <p>Невеликі правки та публікація (Netlify), тест на мобільних.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CTA -->
+    <section class="container section reveal">
+      <div class="cta">
+        <div>
+          <h2>Потрібен сайт?</h2>
+          <p>Напиши мені в Telegram або заповни форму — відповім швидко.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn primary" href="contacts.html#order">Замовити</a>
+          <a class="btn" href="https://t.me/vanichka_love" target="_blank" rel="noopener">Telegram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer container reveal">
+    <div class="footer-top">
+      <div>
+        <h3>Звʼязатися зі мною</h3>
+        <p class="muted">Зручно в Telegram або на Email.</p>
+      </div>
+      <div class="footer-contacts">
+        <a href="https://t.me/vanichka_love" target="_blank" rel="noopener" class="footer-btn">Telegram</a>
+        <a href="mailto:ivantrebko8@gmail.com" class="footer-btn">Email</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 IvanWeb — створення сайтів під ключ</p>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="toTop" class="to-top" type="button" aria-label="Вгору">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

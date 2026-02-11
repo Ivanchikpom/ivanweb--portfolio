@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Контакти | IvanWeb</title>
+  <meta name="description" content="Замовити сайт під ключ. Звʼязок через Telegram, Email або форму заявки (Netlify Forms)." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://ivanweb-portfolio.netlify.app/contacts.html" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Контакти | IvanWeb" />
+  <meta property="og:description" content="Замовити сайт через Telegram/Email або форму заявки." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ivanweb-portfolio.netlify.app/contacts.html" />
+  <meta property="og:image" content="https://ivanweb-portfolio.netlify.app/img/og-cover.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWJFKGW44N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QWJFKGW44N');
+</script>
+
+
+<body data-page="contacts">
+  <div id="preloader" aria-hidden="true"><div class="loader" aria-hidden="true"></div></div>
+
+  <header class="header">
+    <nav class="nav container" aria-label="Головна навігація">
+      <a class="logo" href="index.html" aria-label="IvanWeb — на головну">
+        <span class="logo-dot" aria-hidden="true"></span>IvanWeb
+      </a>
+
+      <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="menu">☰</button>
+
+      <div class="menu" id="menu">
+        <a href="index.html" class="menu-link">Головна</a>
+        <a href="about.html" class="menu-link">Про мене</a>
+        <a href="projects.html" class="menu-link">Проєкти</a>
+        <a href="skills.html" class="menu-link">Навички</a>
+        <a href="contacts.html" class="menu-link">Контакти</a>
+        <div class="menu-actions">
+          <button id="themeToggle" class="theme-btn" type="button" title="Змінити тему">🌙</button>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <button id="themeToggleDesktop" class="theme-btn" type="button" title="Змінити тему">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container section reveal">
+      <div class="page-head">
+        <h1>Замовити сайт</h1>
+        <p class="lead">Напиши, який сайт потрібен — відповім у Telegram або на Email. Або заповни форму нижче ✅</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="panel">
+          <h2>Швидкий звʼязок</h2>
+
+          <div class="contact-list">
+            <a class="contact-item" href="https://t.me/vanichka_love" target="_blank" rel="noopener">
+              💬 Telegram: <b>@vanichka_love</b>
+            </a>
+
+            <button class="contact-item copy-btn" data-copy="ivantrebko8@gmail.com" type="button">
+              ✉️ Email: <b>ivantrebko8@gmail.com</b> <span class="hint">(натисни щоб скопіювати)</span>
+            </button>
+
+            <button class="contact-item copy-btn" data-copy="+380994904726" type="button">
+              📱 Телефон: <b>+380 99 490 4726</b> <span class="hint">(натисни щоб скопіювати)</span>
+            </button>
+          </div>
+
+          <div class="mini-note">
+            <span class="dot" aria-hidden="true"></span>
+            Відповідаю швидко — зазвичай протягом дня.
+          </div>
+        </div>
+
+        <div class="panel" id="order">
+          <h2>Форма заявки</h2>
+          <p class="muted">Опиши коротко задачу — я швидко відповім 🙂</p>
+
+          <!-- Netlify Forms -->
+          <form class="form" name="order" method="POST" data-netlify="true" action="thanks.html">
+            <input type="hidden" name="form-name" value="order" />
+
+            <div class="form-row">
+              <label class="field">
+                <span>Імʼя</span>
+                <input type="text" name="name" placeholder="Іван" required />
+              </label>
+
+              <label class="field">
+                <span>Контакт</span>
+                <input type="text" name="contact" placeholder="@telegram або номер" required />
+              </label>
+            </div>
+
+            <label class="field">
+              <span>Що за сайт потрібен?</span>
+              <textarea name="message" placeholder="Наприклад: сайт-візитка для послуг, 1 сторінка, контакти, кнопка запису…" required></textarea>
+            </label>
+
+            <button class="btn primary btn-wide" type="submit">Відправити заявку</button>
+            <p class="muted" style="margin-top:10px;">Відправка йде через Netlify Forms ✅</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container reveal">
+    <div class="footer-top">
+      <div>
+        <h3>Звʼязатися зі мною</h3>
+        <p class="muted">Telegram або Email.</p>
+      </div>
+      <div class="footer-contacts">
+        <a href="https://t.me/vanichka_love" target="_blank" rel="noopener" class="footer-btn">Telegram</a>
+        <a href="mailto:ivantrebko8@gmail.com" class="footer-btn">Email</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 IvanWeb — створення сайтів під ключ</p>
+  </footer>
+
+  <button id="toTop" class="to-top" type="button" aria-label="Вгору">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
